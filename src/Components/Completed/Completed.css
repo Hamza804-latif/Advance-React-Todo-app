@@ -1,0 +1,110 @@
+.pending {
+  width: 285px;
+  height: calc(100vh - 200px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4px 6px;
+  overflow: auto;
+  overflow-x: hidden;
+}
+.pending__uppersection {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.pending__uppersection-text {
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+}
+.pending__uppersection-count {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  border: 1px solid black;
+  border-radius: 50%;
+  color: #000000;
+  padding: 8px 9px;
+}
+.pending__uppersection-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background: #e5e5e5;
+  border-radius: 10px;
+  margin: 16px 0;
+  padding: 4px 0;
+  text-overflow: hidden;
+}
+.pending__uppersection-content-option {
+  align-self: flex-end;
+  cursor: pointer;
+  width: fit-content;
+  height: fit-content;
+}
+.pending__uppersection-content-text {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  padding: 16px 21px;
+  color: #322121;
+}
+
+/* dot modal css */
+
+.dotmodal {
+  background: #ffffff;
+  border-radius: 5px;
+  padding: 5px 10px;
+  width: fit-content;
+  position: absolute;
+  left: 127px;
+  top: 29px;
+}
+.dotmodal__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.dotmodal__container-delete {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  cursor: pointer;
+  gap: 5px;
+}
+.dotmodal__container-delete p,
+.dotmodal__container-add p {
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #000000;
+  align-self: end;
+}
+.dotmodal__container-delete img {
+  /* align-self: flex-start; */
+}
+.dotmodal__container-add {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  cursor: pointer;
+  gap: 5px;
+}
+.dotmodal__container-add {
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+}
